@@ -6,6 +6,7 @@ const app = express()
 
 app.use(express.json())
 app.use('/', require('./routes/contactRoutes'))
+app.use('/', require('./routes/userRoutes'))
 app.use(errorHandler)
 
 connectDB()
